@@ -1,0 +1,466 @@
+/* General Styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+header {
+    position: relative;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.header-content {
+    max-width: 2000px;
+    min-height: 700px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    padding: 20px;
+}
+
+.navigation {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    align-item: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 30;
+    gap: 80px;
+    background: none;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.navigation a:hover, .navigation a:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.header-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.header-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.header-text a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #83D053;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.header-slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slideshow {
+    0% { opacity: 1; }
+    20% { opacity: 0; }
+    40% { opacity: 1; }
+    60% { opacity: 0; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+ nav ul {
+     list-style: none;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     background-color: rgba(0, 0, 0, 0.7);
+     padding: 10px;
+     border-radius: 10px;
+ }
+
+ nav a {
+     color: white;
+     text-decoration: none;
+     font-size: 18px;
+ }
+
+ nav a.active {
+     text-decoration: underline;
+     color: #83D053; /* Tomato color for the active link */
+ }
+
+ .header-text h1 {
+     margin: 0;
+     font-size: 48px;
+     color: white; /* OrangeRed color for the heading */
+ }
+
+ .header-text p {
+     font-size: 28px;
+     color: white; /* LightSalmon color for the paragraph */
+ }
+
+ /* Section Styles */
+ section {
+     padding: 50px 0;
+     text-align: center;
+     background-color: white;
+     margin: 10px;
+     border-radius: 10px;
+ }
+
+ .section-title {
+     text-align: left;
+     font-size: 2rem;
+     padding: 0px 40px;
+     color: white;
+     margin-bottom: 20px;
+ }
+
+ /* Latest Blog Posts Section */
+
+ #latest-blogs {
+    background-color: black;
+ }
+
+ .blog-posts {
+     display: flex;
+     flex-direction: row;
+     padding: 30px 50px;
+     gap: 50px;
+     justify-content: center;
+ }
+
+ .blog-post {
+     display: flex;
+     align-items: center;
+     border: 1px solid #ccc;
+     padding: 20px;
+     background-color: #f9f9f9;
+     border-radius: 10px;
+     flex: 1;
+     max-width: 30%;
+     box-sizing: border-box;
+ }
+
+ .blog-post img {
+     width: 350px;
+     height: 350px;
+     object-fit: cover;
+     border-radius: 10px;
+     margin-right: 20px;
+ }
+
+ .blog-info {
+     text-align: left;
+     flex: 1;
+ }
+
+ .blog-info h3 {
+     font-size: 24px;
+     margin: 0 0 10px 0;
+     color: black;
+ }
+
+ .blog-info p {
+     font-size: 18px;
+     margin: 0 0 10px 0;
+     color: black;
+ }
+
+ .blog-info a {
+     font-size: 18px;
+     color: #83D053; /* Tomato color for the links */
+     text-decoration: none;
+     font-weight: bold;
+ }
+
+ .see-all {
+     display: inline-block;
+     text-align: center;
+     padding: 30px;
+     font-size: 25px;
+     color: #83D053;
+     text-decoration: none;
+     font-weight: bold;
+ }
+
+ /* Instagram Section Styles */
+
+#instagram {
+    background-color: black;
+}
+
+ .instagram-content {
+    max-width: 1500px;
+    margin-left: 50px;
+    padding: 50px;
+ }
+
+ .instagram-posts img {
+     width: 300px;
+     height: 300px;
+     padding: 15px;
+     object-fit: cover;
+     border-radius: 10px;
+ }
+
+ .instagram-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .instagram-text {
+     max-width: 300px;
+     text-align: center;
+     color: white;
+ }
+
+ .instagram-text p {
+     font-size: 28px;
+ }
+
+ .instagram-text a {
+     color: #83D053;
+     text-decoration: none;
+     font-size: 25px;
+ }
+
+ /* Popular Posts Section */
+
+ #popular-posts {
+    background-color: #B5CEA6;
+ }
+
+ #popular-posts .blog-post {
+    background-color: #EFE5D3;
+ }
+
+ .next-button {
+     position: absolute;
+     right: 0;
+     top: 50%;
+     transform: translateY(-50%);
+     background-color: #ff6347; /* Tomato color for the button */
+     color: white;
+     border: none;
+     padding: 10px;
+     cursor: pointer;
+     border-radius: 50%;
+ }
+
+ /* Categories Section */
+ #categories {
+     text-align: left;
+     padding: 50px 20px;
+     color: white;
+     background-color: #333333;
+ }
+
+ .category-list {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 50px;
+ }
+
+ .category-item {
+     flex: 1 1 calc(20% - 20px);
+     background-color: #8fcf8b;
+     margin-top: 40px;
+     padding: 15px;
+     border-radius: 10px;
+     position: relative;
+ }
+
+ .category-title {
+     background: none;
+     border: none;
+     color: black;
+     font-size: 20px;
+     cursor: pointer;
+     width: 100%;
+     text-align: center;
+     margin: 0;
+     padding: 10px 0;
+     font-weight: bold;
+ }
+
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: white;
+     min-width: 480px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+     left: 0;
+     border-radius: 10px;
+ }
+
+ .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     font-size: 18px;
+     border-bottom: 2px solid #ccc;
+ }
+
+ .dropdown-content a:last-child {
+     border-bottom: none;
+ }
+
+ .category-item:hover .dropdown-content {
+     display: block;
+ }
+
+ /* About Me Section */
+ #about-me {
+     text-align: left;
+     padding: 50px 100px;
+     color: white;
+     background-color: #333333;
+ }
+
+ .about-content {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .about-text {
+     padding: 100px 250px;
+ }
+
+ .about-text h3 {
+     font-size: 38px;
+     color: #ff6347;
+ }
+
+ .about-text p {
+     font-size: 20px;
+ }
+
+ .about-text a {
+     color: #ff6347; /* Tomato color for the link */
+     text-decoration: none;
+     font-weight: bold;
+ }
+
+ .about-content img {
+     width: 400px;
+     height: auto;
+     border-radius: 10px;
+ }
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ffa07a; /* LightSalmon color for footer links */
+    font-size: 25px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.zomato-widget a img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+#subscribe {
+    background-color: black;
+}
+
+#subscribe h2 {
+    color: white;
+    font-size: 40px;
+}
+
+#subscribe p {
+    color: #ff6347; /* Tomato color for the subscribe section text */
+    font-size: 30px;
+}
+
+#subscribe input[type="email"] {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#subscribe button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff6347; /* Tomato color for the subscribe button */
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
