@@ -431,36 +431,34 @@ footer {
 .zomato-widget a img {
     width: 250px;
     border-radius: 10px;
-}
+}#subscribe {
+     background-color: black;
+ }
 
-#subscribe {
-    background-color: black;
-}
+ #subscribe h2 {
+     color: white;
+     font-size: 40px;
+ }
 
-#subscribe h2 {
-    color: white;
-    font-size: 40px;
-}
+ #subscribe p {
+     color: #ff6347; /* Tomato color for the subscribe section text */
+     font-size: 30px;
+ }
 
-#subscribe p {
-    color: #ff6347; /* Tomato color for the subscribe section text */
-    font-size: 30px;
-}
+ #subscribe input[type="email"] {
+     font-size: 20px;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+     margin-right: 10px;
+ }
 
-#subscribe input[type="email"] {
-    font-size: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin-right: 10px;
-}
-
-#subscribe button {
-    font-size: 20px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #ff6347; /* Tomato color for the subscribe button */
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-}
+ #subscribe button {
+     font-size: 20px;
+     padding: 10px 20px;
+     border: none;
+     background-color: #ff6347; /* Tomato color for the subscribe button */
+     color: white;
+     border-radius: 10px;
+     cursor: pointer;
+ }
