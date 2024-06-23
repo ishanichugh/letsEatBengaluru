@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 40px 0;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    font-size: 12px;
+    color: #66bb6a;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    background-color: #333333;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1800px;
+    margin: 31px auto;
+}
+
+/* About Me Section */
+ #about-me {
+     text-align: left;
+     padding: 40px 80px;
+     color: white;
+     background-color: #333333;
+ }
+
+ .about-content {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .about-text {
+     padding: 0px 250px;
+ }
+
+ .about-text h3 {
+     font-size: 38px;
+     color: #ff6347;
+ }
+
+ .about-text p {
+     font-size: 20px;
+ }
+
+ .about-text a {
+     color: #ff6347; /* Tomato color for the link */
+     text-decoration: none;
+     font-weight: bold;
+ }
+
+ .about-content img {
+     width: 400px;
+     height: auto;
+     border-radius: 10px;
+ }
+
+footer {
+    background: #B5CEA6;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ffa07a;
+    font-size: 25px;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.zomato-widget a img {
+    margin-top: 30px;
+    width: 250px;
+    border-radius: 10px;
+}
